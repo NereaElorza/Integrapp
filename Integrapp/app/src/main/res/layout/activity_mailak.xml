@@ -1,39 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_mailak"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="integrapp.tta.intel.ehu.eus.integrapp.MainActivity">
+    tools:context="integrapp.tta.intel.ehu.eus.integrapp.Mailak">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="50px"
+        android:text="@string/titulo_mailak"
         android:gravity="center"
-        android:text="@string/titulo_hizkuntzak"
-        android:onClick="menu"/>
+        android:textSize="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <Button
-        android:text="@string/but_h1"
+        android:text="@string/but_m1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="menu"/>
+        android:onClick="aukerak"/>
     <Button
-        android:text="@string/but_h2"
+        android:text="@string/but_m2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="menu"/>
+        android:onClick="aukerak"/>
     <Button
-        android:text="@string/but_h3"
+        android:text="@string/but_m3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="menu"/>
-    <Button
-        android:text="@string/but_h4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="menu"/>
-
+        android:onClick="aukerak"/>
 
 </LinearLayout>
-

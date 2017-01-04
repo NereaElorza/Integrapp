@@ -4,36 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="integrapp.tta.intel.ehu.eus.integrapp.MainActivity">
+    tools:context="integrapp.tta.intel.ehu.eus.integrapp.Aukerak">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="50px"
+        android:text="@string/titulo_aukerak"
         android:gravity="center"
-        android:text="@string/titulo_hizkuntzak"
-        android:onClick="menu"/>
+        android:textSize="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <Button
-        android:text="@string/but_h1"
+        android:text="@string/but_o1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="menu"/>
+        android:onClick="mapa"/>
     <Button
-        android:text="@string/but_h2"
+        android:text="@string/but_o2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="menu"/>
+        android:onClick="jolasak"/>
     <Button
-        android:text="@string/but_h3"
+        android:text="@string/but_o3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="menu"/>
-    <Button
-        android:text="@string/but_h4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="menu"/>
-
+        android:onClick="autoebaluazioa"/>
 
 </LinearLayout>
-

@@ -4,36 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="integrapp.tta.intel.ehu.eus.integrapp.MainActivity">
+    android:id="@+id/menu_autoebaluazioa"
+    tools:context="integrapp.tta.intel.ehu.eus.integrapp.Autoebaluazioa">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:text="@string/titulo_autoebaluazioa"
         android:textSize="50px"
         android:gravity="center"
-        android:text="@string/titulo_hizkuntzak"
-        android:onClick="menu"/>
-    <Button
-        android:text="@string/but_h1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="menu"/>
-    <Button
-        android:text="@string/but_h2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="menu"/>
-    <Button
-        android:text="@string/but_h3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="menu"/>
-    <Button
-        android:text="@string/but_h4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="menu"/>
+        android:layout_height="wrap_content" />
 
+    <Button
+        android:text="@string/but_a1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dibpal"/>
+    <Button
+        android:text="@string/but_a2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ahotsa"/>
+    <Button
+        android:text="@string/but_a3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="test"/>
 
 </LinearLayout>
-
