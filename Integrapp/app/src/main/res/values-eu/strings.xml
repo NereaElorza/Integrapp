@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Integrapp</string>
 
@@ -32,13 +33,12 @@
     <string name="button_reproducir">ERREPRODUZITU</string>
     <string name="button_record">GRABATU</string>
 
-    <string name="ahorcado">URKATUA</string>
-    <string name="lAhorcado">Letras ahorcado</string>
 
-    <string name="patio">patio</string>
-    <string name="baño">baño</string>
-    <string name="comedor">comedor</string>
-    <string name="aula">aula</string>
-    <string name="gimnasio">gimnasio</string>
+    <string name="aula">gela</string>
+    <string name="baño">komuna</string>
+    <string name="comedor">jantokia</string>
+    <string name="gimnasio">gimnasioa</string>
+    <string name="patio">jolastokia</string>
+
 
 </resources>

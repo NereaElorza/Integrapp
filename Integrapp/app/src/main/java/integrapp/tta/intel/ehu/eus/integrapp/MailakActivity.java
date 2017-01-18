@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Mailak extends AppCompatActivity {
+public class MailakActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,7 +14,7 @@ public class Mailak extends AppCompatActivity {
 
     }
     public void aukerak(View v){
-        Intent intent = new Intent(this, Aukerak.class);
+        Intent intent = new Intent(this, AukerakActivity.class);
         startActivity(intent);
     }
 }

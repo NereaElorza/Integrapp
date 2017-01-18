@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void menu(View v){
-        Intent intent = new Intent(this, Mailak.class);
+        Intent intent = new Intent(this, MailakActivity.class);
         startActivity(intent);
     }
 }

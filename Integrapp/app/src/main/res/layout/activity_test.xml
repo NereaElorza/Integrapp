@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestActivity">
+
+
+<TextView
+        android:text="@string/enunciado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imagenLogo"
+        android:layout_width="700px"
+        android:layout_height="700px"
+        />
+    <!--un unico radioGroup -->
+    <RadioGroup
+        android:id="@+id/test_choices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </RadioGroup>
+
+   <!-- <RadioGroup
+        android:id="@+id/test_choices2"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </RadioGroup>
+
+    <RadioGroup
+    android:id="@+id/test_choices3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    </RadioGroup>-->
+
+    <Button
+        android:id="@+id/button_send_test"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"
+        android:onClick="enviar"/>
+    <Button
+        android:id="@+id/button_next"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_next"
+        android:onClick="modifPant"/>
+</LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/menu_autoebaluazioa"
-    tools:context="integrapp.tta.intel.ehu.eus.integrapp.Autoebaluazioa">
+    tools:context=".AutoebaluazioaActivity">
 
     <TextView
         android:text="@string/titulo_autoebaluazioa"

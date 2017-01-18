@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/menu_jolasak"
-    tools:context=".JolasakActivity">
+    tools:context=".AudioActivity">
 
-    <TextView
-        android:text="@string/titulo_jolasak"
-        android:textSize="50px"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
     <Button
-        android:text="@string/but_j1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:text="@string/but_j2"
+        android:id="@+id/button_reproducir"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="ahorcado"/>
-
+        android:text="@string/button_reproducir"
+        android:onClick="reproducirAudio"/>
+    <Button
+        android:id="@+id/button_record"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_record"
+        android:onClick="grabarAudio"/>
 
 </LinearLayout>

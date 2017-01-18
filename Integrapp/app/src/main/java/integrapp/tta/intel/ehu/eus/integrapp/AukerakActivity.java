@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Aukerak extends AppCompatActivity {
+public class AukerakActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,11 +14,11 @@ public class Aukerak extends AppCompatActivity {
     }
 
     public void jolasak(View v){
-        Intent intent = new Intent(this, Jolasak.class);
+        Intent intent = new Intent(this, JolasakActivity.class);
         startActivity(intent);
     }
     public void autoebaluazioa (View v){
-        Intent intent = new Intent(this, Autoebaluazioa.class);
+        Intent intent = new Intent(this, AutoebaluazioaActivity.class);
         startActivity(intent);
     }
 }

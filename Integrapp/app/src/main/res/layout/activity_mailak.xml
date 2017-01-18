@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="integrapp.tta.intel.ehu.eus.integrapp.Mailak">
+    tools:context=".MailakActivity">
 
     <TextView
         android:text="@string/titulo_mailak"
