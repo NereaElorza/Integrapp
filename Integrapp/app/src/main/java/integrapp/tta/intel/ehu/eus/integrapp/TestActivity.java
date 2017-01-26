@@ -13,9 +13,9 @@ import android.widget.Toast;
 
 public class TestActivity extends AppCompatActivity {
 
-    private String cadena1[] = {"SUKALDEA", "KONKETA*", "PAPERA"};
-    private String cadena2[] = {"TXIRRISTA", "SASKIA", "ZALDIA*"};
-    private String cadena3[] = {"KOMUNA", "IKASGELA", "JANTOKIA*"};
+    private String cadena1[] = {"SUKALDEA", "KONKETA", "PAPERA"};
+    private String cadena2[] = {"TXIRRISTA", "SASKIA", "ZALDIA"};
+    private String cadena3[] = {"KOMUNA", "IKASGELA", "JANTOKIA"};
     private int contador = 0;
     private int correct = 1;
 
@@ -38,8 +38,7 @@ public class TestActivity extends AppCompatActivity {
         for (int i = 0; i < choice; i++) {
             group.getChildAt(i).setEnabled(false);      //deshabilitar todos los botones
         }
-        layout.removeView(findViewById(R.id.button_send_test));
-        findViewById(R.id.button_send_test).setVisibility(View.VISIBLE);
+        findViewById(R.id.button_send_test).setVisibility(View.GONE);
 
         int idboton= group.getCheckedRadioButtonId();
         View vista=findViewById(idboton);
@@ -81,14 +80,9 @@ public class TestActivity extends AppCompatActivity {
         for (int i = 0; i < 3; i++) {
             RadioButton radio = new RadioButton(this);
             radio.setText(cadena[i]);
-            radio.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    findViewById(R.id.button_send_test).setVisibility(View.VISIBLE);
-                }
-            });
             group.addView(radio);
         }
+        findViewById(R.id.button_send_test).setVisibility(View.VISIBLE);
     }
 
     public void modifPant(View v) {
