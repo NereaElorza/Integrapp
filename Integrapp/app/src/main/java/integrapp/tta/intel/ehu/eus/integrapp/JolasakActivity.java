@@ -17,4 +17,8 @@ public class JolasakActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AhorcadoActivity.class);
         startActivity(intent);
     }
+    public void memory(View v){
+        Intent intent = new Intent(this, MemoryActivity.class);
+        startActivity(intent);
+    }
 }

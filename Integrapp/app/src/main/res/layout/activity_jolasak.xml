@@ -16,7 +16,8 @@
     <Button
         android:text="@string/but_j1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:onClick="memory"/>
     <Button
         android:text="@string/but_j2"
         android:layout_width="match_parent"

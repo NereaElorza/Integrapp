@@ -22,11 +22,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Introdue letra"/>
-    <EditText
-        android:id="@+id/pal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Palabra"/>
     <Button
         android:text="@string/enviar"
         android:layout_width="match_parent"
@@ -36,4 +31,22 @@
         android:id="@+id/palabra_ahorcado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <ImageView
+            android:id="@+id/imageAhorcado"
+            android:background="@drawable/ahorcado0"
+            android:layout_width="194dp"
+            android:layout_height="194dp"/>
+        <TextView
+            android:id="@+id/sobra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </GridLayout>
+
 </LinearLayout>
+
