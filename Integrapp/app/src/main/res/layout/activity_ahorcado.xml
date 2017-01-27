@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/test_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AhorcadoActivity">
+    tools:context="integrapp.tta.intel.ehu.eus.integrapp.AhorcadoActivity">
 
     <TextView
         android:text="@string/ahorcado"
-        android:gravity="center"
+        android:textStyle="bold"
         android:textSize="50px"
+        android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
     <TextView
-        android:text="@string/lAhorcado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:text="Inserta la letra en mayusculas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/letra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Introduce letra en mayusculas"/>
-    <TextView
-        android:id="@+id/palabra_ahorcado"
+        android:hint="Introdue letra"/>
+    <EditText
+        android:id="@+id/pal"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Palabra"/>
+    <Button
+        android:text="@string/enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="comprobarLetra"/>
+    <EditText
+        android:id="@+id/palabra_ahorcado"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
 </LinearLayout>
