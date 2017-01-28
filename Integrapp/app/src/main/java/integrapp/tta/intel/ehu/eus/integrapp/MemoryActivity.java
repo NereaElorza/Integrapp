@@ -1,127 +1,192 @@
 package integrapp.tta.intel.ehu.eus.integrapp;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class MemoryActivity extends AppCompatActivity {
+public class MemoryActivity extends AppCompatActivity implements View.OnClickListener {
 
-   int parejaId1=0;
-   int parejaId2=0;
-   int parejas = 0;
+    int pareja1 = 0;
+    int pareja2 = 0;
+    int pareja3 = 0;
+    int parejas = 0;
+    int cont = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memory);
+
+        findViewById(R.id.pareja1).setOnClickListener(this);
+        findViewById(R.id.pareja2).setOnClickListener(this);
+        findViewById(R.id.pareja3).setOnClickListener(this);
+        findViewById(R.id.pareja1a).setOnClickListener(this);
+        findViewById(R.id.pareja2a).setOnClickListener(this);
+        findViewById(R.id.pareja3a).setOnClickListener(this);
     }
+    @Override
+    public void onClick(View v) {
 
-    public void parejas(View view){
-        boolean igualdad;
+        View contenedor = v.getRootView();
 
-        //pareja1
-        Button p1 = (Button) findViewById(R.id.pareja1);
-        p1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(parejas<1){
-                    parejaId1=1;
-                    parejas++;
-                }else{
-                    parejaId2=1;
-                    parejas++;
-                }
-            }
-        });
-        //pareja2
-        Button p2 = (Button) findViewById(R.id.pareja2);
-        p2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(parejas<1){
-                    parejaId1=2;
-                    parejas++;
-                }else{
-                    parejaId2=2;
-                    parejas++;
-                }
-            }
-        });
-        //pareja3
-        Button p3 = (Button) findViewById(R.id.pareja3);
-        p3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(parejas<1){
-                    parejaId1=3;
-                    parejas++;
-                }else{
-                    parejaId2=3;
-                    parejas++;
-                }
-            }
-        });
-        //pareja1a
-        Button p1a = (Button) findViewById(R.id.pareja1a);
-        p1a.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(parejas<1){
-                    parejaId1=1;
-                    parejas++;
-                }else{
-                    parejaId2=1;
-                    parejas++;
-                }
-            }
-        });
-        //pareja2a
-        Button p2a = (Button) findViewById(R.id.pareja2a);
-        p2a.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(parejas<1){
-                    parejaId1=2;
-                    parejas++;
-                }else{
-                    parejaId2=2;
-                    parejas++;
-                }
-            }
-        });
-        //pareja3a
-        Button p3a = (Button) findViewById(R.id.pareja3a);
-        p3a.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(parejas<1){
-                    parejaId1=3;
-                    parejas++;
-                }else{
-                    parejaId2=3;
-                    parejas++;
-                }
-            }
-        });
+        switch (v.getId()) {
+            case R.id.pareja1:
+                pareja1++;
+                parejas++;
 
-        if(parejas==2){
-            if(parejaId1==parejaId2){
-                igualdad=true;
-                Toast.makeText(this, "Acertaste", Toast.LENGTH_LONG).show();
-            }else{
-                igualdad=false;
-                Toast.makeText(this, "Fallaste", Toast.LENGTH_LONG).show();
-            }
-            parejas = 0;
-            parejaId1=0;
-            parejaId2=0;
-        }else{
-            Toast.makeText(this, "Te falta una pareja", Toast.LENGTH_LONG).show();
+                ImageButton boton1 = (ImageButton) findViewById(R.id.pareja1);;
+                boton1.setImageResource(R.drawable.pelota);
+
+                break;
+            case R.id.pareja2:
+                pareja2++;
+                parejas++;
+
+                ImageButton boton2 = (ImageButton) findViewById(R.id.pareja2);
+                boton2.setImageResource(R.drawable.rotuladores);  //seleccionar el boton
+
+                break;
+            case R.id.pareja3:
+                pareja3++;
+                parejas++;
+
+                ImageButton boton3 = (ImageButton) findViewById(R.id.pareja3);
+                boton3.setImageResource(R.drawable.estuche); //seleccionar el boton
+
+                break;
+            case R.id.pareja1a:
+                pareja1++;
+                parejas++;
+
+                ImageButton boton1a = (ImageButton) findViewById(R.id.pareja1a);
+                boton1a.setImageResource(R.drawable.pelota);  //seleccionar el boton
+
+
+                break;
+            case R.id.pareja2a:
+                pareja2++;
+                parejas++;
+
+                ImageButton boton2a = (ImageButton) findViewById(R.id.pareja2a);
+                boton2a.setImageResource(R.drawable.rotuladores);  //seleccionar el boton
+
+                break;
+            case R.id.pareja3a:
+                pareja3++;
+                parejas++;
+
+                ImageButton boton3a = (ImageButton) findViewById(R.id.pareja3a);
+                boton3a.setImageResource(R.drawable.estuche);;  //seleccionar el boton
+
+                break;
+            default:
         }
+    }
+    public void enviar(View view){
+        if(parejas==2){
+            if(pareja1==2 || pareja2==2 ||pareja3==2){
 
+                if(pareja1==2){
+                    ImageButton boton1 = (ImageButton) findViewById(R.id.pareja1);
+                    boton1.setImageDrawable(null);
+                    boton1.setBackgroundColor(Color.GREEN);
+                    boton1.setEnabled(false);
 
+                    ImageButton boton1a = (ImageButton) findViewById(R.id.pareja1a);
+                    boton1a.setImageDrawable(null);
+                    boton1a.setBackgroundColor(Color.GREEN);
+                    boton1a.setEnabled(false);
+                }
+                if(pareja2==2){
+                    ImageButton boton2 = (ImageButton) findViewById(R.id.pareja2);
+                    boton2.setImageDrawable(null);
+                    boton2.setBackgroundColor(Color.GREEN);
+                    boton2.setEnabled(false);
+
+                    ImageButton boton2a = (ImageButton) findViewById(R.id.pareja2a);
+                    boton2a.setImageDrawable(null);
+                    boton2a.setBackgroundColor(Color.GREEN);
+                    boton2a.setEnabled(false);
+                }
+                if(pareja3==2){
+                    ImageButton boton3 = (ImageButton) findViewById(R.id.pareja3);
+                    boton3.setImageDrawable(null);
+                    boton3.setBackgroundColor(Color.GREEN);
+                    boton3.setEnabled(false);
+
+                    ImageButton boton3a = (ImageButton) findViewById(R.id.pareja3a);
+                    boton3a.setImageDrawable(null);
+                    boton3a.setBackgroundColor(Color.GREEN);
+                    boton3a.setEnabled(false);
+                }
+
+                Toast.makeText(this,"Acertaste",Toast.LENGTH_SHORT).show();
+                cont++;
+                reiniciar();
+
+            }else{
+
+                if(pareja1!=0){
+                    ImageButton boton1 = (ImageButton) findViewById(R.id.pareja1);
+                    boton1.setImageDrawable(null);
+                    boton1.setBackgroundColor(Color.LTGRAY);
+
+                    ImageButton boton1a = (ImageButton) findViewById(R.id.pareja1a);
+                    boton1a.setImageDrawable(null);
+                    boton1a.setBackgroundColor(Color.LTGRAY);
+                }
+                if(pareja2!=0){
+                    ImageButton boton2 = (ImageButton) findViewById(R.id.pareja2);
+                    boton2.setImageDrawable(null);
+                    boton2.setBackgroundColor(Color.LTGRAY);
+
+                    ImageButton boton2a = (ImageButton) findViewById(R.id.pareja2a);
+                    boton2a.setImageDrawable(null);
+                    boton2a.setBackgroundColor(Color.LTGRAY);
+                }
+                if(pareja3!=0){
+                    ImageButton boton3 = (ImageButton) findViewById(R.id.pareja3);
+                    boton3.setImageDrawable(null);
+                    boton3.setBackgroundColor(Color.LTGRAY);
+
+                    ImageButton boton3a = (ImageButton) findViewById(R.id.pareja3a);
+                    boton3a.setImageDrawable(null);
+                    boton3a.setBackgroundColor(Color.LTGRAY);
+                }
+                Toast.makeText(this,"Fallaste",Toast.LENGTH_SHORT).show();
+                reiniciar();
+            }
+            if(cont==3){
+                AlertDialog.Builder dialogo1 = new AlertDialog.Builder(this);
+                dialogo1.setTitle("ZORIONAK, JOKUA AMAITU DUZU!!");
+                dialogo1.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogo1, int id) {
+                        cancelar();
+                    }
+                });
+                dialogo1.show();
+            }
+        }
     }
 
+    public void reiniciar(){
+        pareja1=0;
+        pareja2=0;
+        pareja3=0;
+        parejas=0;
+    }
+
+    public void cancelar(){
+        Intent intent = new Intent(this, JolasakActivity.class);
+        startActivity(intent);
+    }
 }
