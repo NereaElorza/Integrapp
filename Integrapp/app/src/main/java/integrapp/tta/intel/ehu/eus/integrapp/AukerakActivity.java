@@ -21,4 +21,9 @@ public class AukerakActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AutoebaluazioaActivity.class);
         startActivity(intent);
     }
+
+    public void mapa (View view){
+        Intent intent = new Intent(this, MapaActivity.class);
+        startActivity(intent);
+    }
 }

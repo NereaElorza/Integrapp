@@ -10,7 +10,7 @@ import android.widget.MediaController;
 import java.io.IOException;
 
 /**
- * Created by nerea on 18/01/17.
+ * Created by nerea on 3/01/17.
  */
 public class AudioPlayer implements MediaController.MediaPlayerControl, MediaPlayer.OnPreparedListener {
     private View view;
@@ -26,14 +26,14 @@ public class AudioPlayer implements MediaController.MediaPlayerControl, MediaPla
             public boolean dispatchKeyEvent(KeyEvent event){
                 if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
                     release();
-                    // onExit.run();
+                   // onExit.run();
                 }
                 return super.dispatchKeyEvent(event);
             }
         };
     }
 
-    public void setAudioUri(Uri uri) throws IOException {
+    public void setAudioUri(Uri uri) throws IOException{
         player.setAudioStreamType(AudioManager.STREAM_MUSIC);
         player.setDataSource(view.getContext(), uri);
         player.prepare();
