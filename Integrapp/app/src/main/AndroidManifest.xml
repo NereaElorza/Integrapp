@@ -30,7 +30,8 @@
         <activity android:name=".TestActivity" />
         <activity android:name=".AudioActivity" />
         <activity android:name=".AhorcadoActivity" />
-        <activity android:name=".MemoryActivity"></activity>
+        <activity android:name=".MemoryActivity" />
+        <activity android:name=".UnirActivity"></activity>
     </application>
 
 </manifest>

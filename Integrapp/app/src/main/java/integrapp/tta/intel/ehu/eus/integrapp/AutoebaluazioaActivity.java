@@ -20,4 +20,9 @@ public class AutoebaluazioaActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AudioActivity.class);
         startActivity(intent);
     }
+
+    public void dibpal(View v){
+        Intent intent = new Intent(this, UnirActivity.class);
+        startActivity(intent);
+    }
 }
