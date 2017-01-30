@@ -16,12 +16,13 @@
         android:rowCount="9"
         android:columnCount="3">
 
-        <Button
+        <ImageButton
             android:id="@+id/patio"
             android:layout_width="111dp"
             android:layout_height="92dp"
             android:layout_row="0"
-            android:layout_column="1"/>
+            android:layout_column="1"
+            android:onClick="mapa"/>
         <TextView
             android:text="@string/patio"
             android:layout_width="111dp"
@@ -30,18 +31,19 @@
             android:layout_row="1"
             android:layout_column="1"/>
         <TextView
-            android:text="aaaaa"
+            android:text="bbbbb"
             android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_row="2"
             android:layout_column="1"/>
-        <Button
+        <ImageButton
             android:id="@+id/baño"
             android:layout_width="111dp"
             android:layout_height="92dp"
             android:layout_row="3"
-            android:layout_column="0"/>
+            android:layout_column="0"
+            android:onClick="mapa"/>
         <TextView
             android:text="@string/baño"
             android:layout_width="111dp"
@@ -56,12 +58,13 @@
             android:gravity="center"
             android:layout_row="5"
             android:layout_column="0"/>
-        <Button
+        <ImageButton
             android:id="@+id/comedor"
             android:layout_width="111dp"
             android:layout_height="92dp"
             android:layout_row="3"
-            android:layout_column="2" />
+            android:layout_column="2"
+            android:onClick="mapa"/>
         <TextView
             android:text="@string/comedor"
             android:layout_width="111dp"
@@ -76,12 +79,13 @@
             android:gravity="center"
             android:layout_row="5"
             android:layout_column="2"/>
-        <Button
+        <ImageButton
             android:id="@+id/aula"
             android:layout_width="111dp"
             android:layout_height="92dp"
             android:layout_row="6"
-            android:layout_column="0"/>
+            android:layout_column="0"
+            android:onClick="mapa"/>
         <TextView
             android:text="@string/aula"
             android:layout_width="111dp"
@@ -96,12 +100,13 @@
             android:gravity="center"
             android:layout_row="8"
             android:layout_column="0"/>
-        <Button
+        <ImageButton
             android:id="@+id/gimnasio"
             android:layout_width="111dp"
             android:layout_height="92dp"
             android:layout_row="6"
-            android:layout_column="2"/>
+            android:layout_column="2"
+            android:onClick="mapa"/>
         <TextView
             android:text="@string/gimnasio"
             android:layout_width="111dp"

@@ -7,10 +7,18 @@ import android.view.View;
 
 public class AukerakActivity extends AppCompatActivity {
 
+    String nivel = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aukerak);
+
+        Intent intent=getIntent();
+        Bundle extras =intent.getExtras();
+        if (extras != null) {//ver si contiene datos
+            nivel = (String) extras.get("nivel");//Obtengo el nombre de la pantalla
+        }
     }
 
     public void jolasak(View v){
@@ -24,6 +32,7 @@ public class AukerakActivity extends AppCompatActivity {
 
     public void mapa (View view){
         Intent intent = new Intent(this, MapaActivity.class);
+        intent.putExtra("nivel",nivel);
         startActivity(intent);
     }
 }

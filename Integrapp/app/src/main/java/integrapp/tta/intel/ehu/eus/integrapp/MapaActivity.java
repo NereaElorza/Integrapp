@@ -9,47 +9,62 @@ import android.widget.ImageButton;
 
 import java.util.Locale;
 
-public class MapaActivity extends AppCompatActivity implements View.OnClickListener{
+public class MapaActivity extends AppCompatActivity {
+
+    String nivel ="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapa);
+
+        Intent intent=getIntent();
+        Bundle extras =intent.getExtras();
+        if (extras != null) {//ver si contiene datos
+            nivel = (String) extras.get("nivel");//Obtengo el nombre de la pantalla
+        }
+
+
     }
-    @Override
-    public void onClick(View v) {
+    public void mapa(View v){
 
         Intent explicit_intent = new Intent(this,Mapa2Activity.class);
+        explicit_intent.putExtra("nivel",nivel);
 
         switch (v.getId()) {
             case R.id.patio:
 
-                explicit_intent.putExtra("patio","paio");
+                explicit_intent.putExtra("p","patio");
+                startActivity(explicit_intent);
                 break;
             case R.id.baño:
 
-                explicit_intent.putExtra("baño","baño");
+                explicit_intent.putExtra("b","baño");
+                startActivity(explicit_intent);
 
                 break;
             case R.id.comedor:
 
-                explicit_intent.putExtra("comedor","comedor");
+                explicit_intent.putExtra("c","comedor");
+                startActivity(explicit_intent);
 
                 break;
             case R.id.aula:
 
-                explicit_intent.putExtra("aula","aula");
+                explicit_intent.putExtra("a","aula");
+                startActivity(explicit_intent);
 
                 break;
             case R.id.gimnasio:
 
-                explicit_intent.putExtra("gimnasio","gimnasio");
+                explicit_intent.putExtra("g","gimnasio");
+                startActivity(explicit_intent);
 
                 break;
 
             default:
         }
-        startActivity(explicit_intent);
+
     }
 
 }

@@ -16,12 +16,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
 
 public class MemoryActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -52,8 +55,21 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
                 pareja1++;
                 parejas++;
 
-                ImageButton boton1 = (ImageButton) findViewById(R.id.pareja1);;
+                final ImageButton boton1 = (ImageButton) findViewById(R.id.pareja1);
                 boton1.setImageResource(R.drawable.pelota);
+
+                /*new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        final Bitmap bitmap = get_imagen("https://dl.dropboxusercontent.com/s/a64wzmvzpvn6qf8/estuche.jpg?dl=0");
+                        boton1.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                boton1.setImageBitmap(bitmap);
+                            }
+                        });
+                    }
+                });*/
 
                 break;
             case R.id.pareja2:
@@ -199,5 +215,21 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
         startActivity(intent);
     }
 
+    public Bitmap get_imagen(String url) {
+        Bitmap bm = null;
+        try {
+            URL _url = new URL(url);
+            URLConnection con = _url.openConnection();
+            con.connect();
+            InputStream is = con.getInputStream();
+            BufferedInputStream bis = new BufferedInputStream(is);
+            bm = BitmapFactory.decodeStream(bis);
+            bis.close();
+            is.close();
+        } catch (IOException e) {
+
+        }
+        return bm;
+    }
 
 }

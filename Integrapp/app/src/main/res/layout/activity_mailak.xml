@@ -14,19 +14,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
+        android:id="@+id/nivel1"
         android:text="@string/but_m1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="aukerak"/>
+        android:layout_height="wrap_content"/>
     <Button
+        android:id="@+id/nivel2"
         android:text="@string/but_m2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="aukerak"/>
+        android:layout_height="wrap_content"/>
     <Button
+        android:id="@+id/nivel3"
         android:text="@string/but_m3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="aukerak"/>
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

@@ -42,4 +42,51 @@
     <string name="aula">aula</string>
     <string name="gimnasio">gimnasio</string>
 
+    <string name="patio1">pilota</string>
+    <string name="patio2">zabua</string>
+    <string name="patio3">soka</string>
+    <string name="patio4">zelaia</string>
+    <string name="patio5">porteria</string>
+    <string name="patio6">saskia</string>
+    <string name="patio7">kanikak</string>
+    <string name="patio8">izkutaketa</string>
+    <string name="patio9">futbola</string>
+
+    <string name="baño1">papera</string>
+    <string name="baño2">ura</string>
+    <string name="baño3">txisa</string>
+    <string name="baño4">xabia</string>
+    <string name="baño5">txorrota</string>
+    <string name="baño6">konketa</string>
+    <string name="baño7">katetik tiratu</string>
+    <string name="baño8">komun ontzia</string>
+    <string name="baño9">ispilua</string>
+
+    <string name="comedor1">edalontzia</string>
+    <string name="comedor2">platerra</string>
+    <string name="comedor3">sardexka</string>
+    <string name="comedor4">koilara</string>
+    <string name="comedor5">labana</string>
+    <string name="comedor6">pitxarra</string>
+    <string name="comedor7">janaria</string>
+    <string name="comedor8">gosaria</string>
+    <string name="comedor9">hamaiketakoa</string>
+
+    <string name="aula1">irakaslea</string>
+    <string name="aula2">ikaslea</string>
+    <string name="aula3">arbela</string>
+    <string name="aula4">agenda</string>
+    <string name="aula5">mahaia</string>
+    <string name="aula6">aulkia</string>
+    <string name="aula7">estutxea</string>
+    <string name="aula8">koadernoa</string>
+    <string name="aula9">karpeta</string>
+
+    <string name="gimnasio1">korrika</string>
+    <string name="gimnasio2">salto</string>
+    <string name="gimnasio3">eraiki</string>
+    <string name="gimnasio4">zaldi</string>
+    <string name="gimnasio5">tranpolin</string>
+    <string name="gimnasio6">koltxoneta</string>
+
 </resources>
