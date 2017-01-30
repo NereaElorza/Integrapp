@@ -6,12 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import java.util.Locale;
 
 public class MapaActivity extends AppCompatActivity {
 
-    String nivel ="";
+    String idioma ="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,27 @@ public class MapaActivity extends AppCompatActivity {
         Intent intent=getIntent();
         Bundle extras =intent.getExtras();
         if (extras != null) {//ver si contiene datos
-            nivel = (String) extras.get("nivel");//Obtengo el nombre de la pantalla
+            idioma = (String) extras.get("idioma");//Obtengo el nombre de la pantalla
+        }
+
+        TextView p = (TextView) findViewById(R.id.id1);
+        TextView b = (TextView) findViewById(R.id.id2);
+        TextView c = (TextView) findViewById(R.id.id3);
+        TextView g = (TextView) findViewById(R.id.id5);
+        TextView a = (TextView) findViewById(R.id.id4);
+
+        if(idioma.matches("c")){
+            p.setText(R.string.patioc);
+            b.setText(R.string.baño1c);
+            c.setText(R.string.comedorc);
+            a.setText(R.string.aulac);
+            g.setText(R.string.gimnasioc);
+        }else{
+            p.setText(R.string.patioe);
+            b.setText(R.string.baño1e);
+            c.setText(R.string.comedore);
+            a.setText(R.string.aulae);
+            g.setText(R.string.gimnasioe);
         }
 
 
@@ -29,7 +50,7 @@ public class MapaActivity extends AppCompatActivity {
     public void mapa(View v){
 
         Intent explicit_intent = new Intent(this,Mapa2Activity.class);
-        explicit_intent.putExtra("nivel",nivel);
+        explicit_intent.putExtra("idioma",idioma);
 
         switch (v.getId()) {
             case R.id.patio:

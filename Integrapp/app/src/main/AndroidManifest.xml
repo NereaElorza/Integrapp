@@ -30,7 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MailakActivity" />
         <activity android:name=".AukerakActivity" />
         <activity android:name=".JolasakActivity" />
         <activity android:name=".AutoebaluazioaActivity" />

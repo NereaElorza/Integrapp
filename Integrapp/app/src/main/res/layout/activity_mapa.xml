@@ -18,6 +18,7 @@
 
         <ImageButton
             android:id="@+id/patio"
+            android:src="@drawable/cuerda"
             android:layout_width="111dp"
             android:layout_height="92dp"
             android:layout_row="0"
@@ -31,7 +32,7 @@
             android:layout_row="1"
             android:layout_column="1"/>
         <TextView
-            android:text="bbbbb"
+            android:id="@+id/id1"
             android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -43,6 +44,7 @@
             android:layout_height="92dp"
             android:layout_row="3"
             android:layout_column="0"
+            android:src="@drawable/bano"
             android:onClick="mapa"/>
         <TextView
             android:text="@string/baño"
@@ -52,7 +54,7 @@
             android:layout_row="4"
             android:layout_column="0"/>
         <TextView
-            android:text="aaaaa"
+            android:id="@+id/id2"
             android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -64,6 +66,7 @@
             android:layout_height="92dp"
             android:layout_row="3"
             android:layout_column="2"
+            android:src="@drawable/comedor"
             android:onClick="mapa"/>
         <TextView
             android:text="@string/comedor"
@@ -73,7 +76,7 @@
             android:layout_row="4"
             android:layout_column="2"/>
         <TextView
-            android:text="aaaaa"
+            android:id="@+id/id3"
             android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -85,6 +88,7 @@
             android:layout_height="92dp"
             android:layout_row="6"
             android:layout_column="0"
+            android:src="@drawable/aula"
             android:onClick="mapa"/>
         <TextView
             android:text="@string/aula"
@@ -94,7 +98,7 @@
             android:layout_row="7"
             android:layout_column="0"/>
         <TextView
-            android:text="aaaaa"
+            android:id="@+id/id4"
             android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -106,6 +110,7 @@
             android:layout_height="92dp"
             android:layout_row="6"
             android:layout_column="2"
+            android:src="@drawable/gim"
             android:onClick="mapa"/>
         <TextView
             android:text="@string/gimnasio"
@@ -115,7 +120,7 @@
             android:layout_row="7"
             android:layout_column="2"/>
         <TextView
-            android:text="@string/gimnasio"
+            android:id="@+id/id5"
             android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:gravity="center"

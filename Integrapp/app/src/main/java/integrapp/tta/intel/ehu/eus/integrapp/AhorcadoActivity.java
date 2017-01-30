@@ -23,6 +23,7 @@ public class AhorcadoActivity extends AppCompatActivity {
     String[]palabra;
     String cadena = "" ;
     int num;
+    int numero;
     String arrayfinal[];
     int contbien=0;
     int contmal=0;
@@ -38,7 +39,7 @@ public class AhorcadoActivity extends AppCompatActivity {
 
     public void obtenerPalabra(){
         String dibujo[]=null;
-        int numero = (int) Math.round(Math.random() * 11);
+        numero = (int) Math.round(Math.random() * 11);
         String pal = arrayPalabras[numero];
         palabra= pal.split(" ");
         arrayfinal=pal.split(" ");
@@ -83,7 +84,7 @@ public class AhorcadoActivity extends AppCompatActivity {
             String titulo = "ZORIONAK!! JOKUA IRABAZI DUZU";
             dialogo(titulo);
         }
-        if(contmal==num){
+        if(contmal==9){
             String titulo = "OHH, EZ DUZU HITZA ASMATU";
             ImageView logo = (ImageView) findViewById(R.id.imageAhorcado);
             logo.setImageResource(R.drawable.ahorcado);
@@ -100,15 +101,8 @@ public class AhorcadoActivity extends AppCompatActivity {
     public void dialogo(String titulo){
         AlertDialog.Builder dialogo1 = new AlertDialog.Builder(this);
         dialogo1.setTitle(titulo);
-        dialogo1.setMessage("Berriro jolastu nahi?");
-        dialogo1.setPositiveButton("Bai", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogo1, int id) {
-                TextView text = (TextView)findViewById(R.id.palabra_ahorcado);
-                text.setText("");
-                obtenerPalabra();
-            }
-        });
-        dialogo1.setNegativeButton("Ez", new DialogInterface.OnClickListener() {
+        dialogo1.setMessage("Hitza "+arrayPalabras[numero]+" zen");
+        dialogo1.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogo1, int id) {
                 cancelar();
             }

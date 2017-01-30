@@ -7,7 +7,7 @@ import android.view.View;
 
 public class AukerakActivity extends AppCompatActivity {
 
-    String nivel = "";
+    String idioma = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class AukerakActivity extends AppCompatActivity {
         Intent intent=getIntent();
         Bundle extras =intent.getExtras();
         if (extras != null) {//ver si contiene datos
-            nivel = (String) extras.get("nivel");//Obtengo el nombre de la pantalla
+            idioma = (String) extras.get("idioma");//Obtengo el nombre de la pantalla
         }
     }
 
@@ -32,7 +32,7 @@ public class AukerakActivity extends AppCompatActivity {
 
     public void mapa (View view){
         Intent intent = new Intent(this, MapaActivity.class);
-        intent.putExtra("nivel",nivel);
+        intent.putExtra("idioma",idioma);
         startActivity(intent);
     }
 }

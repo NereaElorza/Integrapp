@@ -58,19 +58,6 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
                 final ImageButton boton1 = (ImageButton) findViewById(R.id.pareja1);
                 boton1.setImageResource(R.drawable.pelota);
 
-                /*new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        final Bitmap bitmap = get_imagen("https://dl.dropboxusercontent.com/s/a64wzmvzpvn6qf8/estuche.jpg?dl=0");
-                        boton1.post(new Runnable() {
-                            @Override
-                            public void run() {
-                                boton1.setImageBitmap(bitmap);
-                            }
-                        });
-                    }
-                });*/
-
                 break;
             case R.id.pareja2:
                 pareja2++;
@@ -216,6 +203,7 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     public Bitmap get_imagen(String url) {
+        System.out.println("En getImagen");
         Bitmap bm = null;
         try {
             URL _url = new URL(url);

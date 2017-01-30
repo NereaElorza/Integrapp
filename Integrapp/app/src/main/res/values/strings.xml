@@ -1,13 +1,8 @@
 <resources>
     <string name="app_name">Integrapp</string>
 
-    <string name="but_h1">ARABIERA</string>
+    <string name="but_h1">INGELERA</string>
     <string name="but_h2">GAZTELERA</string>
-    <string name="but_h3">INGELERA</string>
-    <string name="but_h4">ERUSIERRA</string>
-    <string name="but_m1">1</string>
-    <string name="but_m2">2</string>
-    <string name="but_m3">3</string>
     <string name="but_o1">IKASI</string>
     <string name="but_o2">JOLASTU</string>
     <string name="but_o3">EBALUAZIOA</string>
@@ -31,62 +26,63 @@
     <string name="no_app">No app</string>
     <string name="no_micro">no micro</string>
     <string name="button_reproducir">ERREPRODUZITU</string>
+    <string name="buton_reproducirgrabado">ERREPRODUZITU GRABATUTAKOA</string>
     <string name="button_record">GRABATU</string>
 
     <string name="ahorcado">URKATUA</string>
     <string name="lAhorcado">Letras ahorcado</string>
 
-    <string name="patio">patio</string>
-    <string name="baño">baño</string>
-    <string name="comedor">comedor</string>
-    <string name="aula">aula</string>
-    <string name="gimnasio">gimnasio</string>
+    <string name="patio">jolastokia</string> <string name="patioc">patio</string><string name="patioe">playground</string>
+    <string name="baño">komuna</string> <string name="bañoc">baño</string><string name="bañoe">bathroom</string>
+    <string name="comedor">jantokia</string> <string name="comedorc">comedor</string><string name="comedore">dinning room</string>
+    <string name="aula">gela</string> <string name="aulac">aula</string><string name="aulae">classroom</string>
+    <string name="gimnasio">gimnasioa</string> <string name="gimnasioc">gimnasio</string><string name="gimnasioe">gym</string>
 
-    <string name="patio1">pilota</string>
-    <string name="patio2">zabua</string>
-    <string name="patio3">soka</string>
-    <string name="patio4">zelaia</string>
-    <string name="patio5">porteria</string>
-    <string name="patio6">saskia</string>
-    <string name="patio7">kanikak</string>
-    <string name="patio8">izkutaketa</string>
-    <string name="patio9">futbola</string>
+    <string name="patio1">pilota</string> <string name="patio1c">pelota</string> <string name="patio1e">ball</string>
+    <string name="patio2">zabua</string> <string name="patio2c">columpio</string> <string name="patio2e">swing</string>
+    <string name="patio3">soka</string> <string name="patio3c">cuerda</string> <string name="patio3e">rope</string>
+    <string name="patio4">zelaia</string> <string name="patio4c">campo</string> <string name="patio4e">field</string>
+    <string name="patio5">porteria</string> <string name="patio5c">porteria</string> <string name="patio5e">porter is lodge</string>
+    <string name="patio6">saskia</string> <string name="patio6c">canasta</string> <string name="patio6e">basket</string>
+    <string name="patio7">kanikak</string> <string name="patio7c">canicas</string> <string name="patio7e">marbles</string>
+    <string name="patio8">izkutaketa</string> <string name="patio8c">esconderte</string> <string name="patio8e">hide</string>
+    <string name="patio9">futbola</string> <string name="patio9c">futbol</string> <string name="patio9e">football</string>
 
-    <string name="baño1">papera</string>
-    <string name="baño2">ura</string>
-    <string name="baño3">txisa</string>
-    <string name="baño4">xabia</string>
-    <string name="baño5">txorrota</string>
-    <string name="baño6">konketa</string>
-    <string name="baño7">katetik tiratu</string>
-    <string name="baño8">komun ontzia</string>
-    <string name="baño9">ispilua</string>
+    <string name="baño1">papera</string><string name="baño1c">papel</string><string name="baño1e">paper</string>
+    <string name="baño2">ura</string><string name="baño2c">agua</string><string name="baño2e">water</string>
+    <string name="baño3">txisa</string><string name="baño3c">pis</string><string name="baño3e">pee</string>
+    <string name="baño4">xaboia</string><string name="baño4c">jabon</string><string name="baño4e">soap</string>
+    <string name="baño5">txorrota</string><string name="baño5c">grifo</string><string name="baño5e">tap</string>
+    <string name="baño6">konketa</string><string name="baño6c">lavabo</string><string name="baño6e">sink</string>
+    <string name="baño7">katetik tiratu</string><string name="baño7c">tirar de la cadena</string><string name="baño7e">flush</string>
+    <string name="baño8">komun ontzia</string><string name="baño8c">retrete</string><string name="baño8e">toilet</string>
+    <string name="baño9">ispilua</string><string name="baño9c">espejo</string><string name="baño9e">mirror</string>
 
-    <string name="comedor1">edalontzia</string>
-    <string name="comedor2">platerra</string>
-    <string name="comedor3">sardexka</string>
-    <string name="comedor4">koilara</string>
-    <string name="comedor5">labana</string>
-    <string name="comedor6">pitxarra</string>
-    <string name="comedor7">janaria</string>
-    <string name="comedor8">gosaria</string>
-    <string name="comedor9">hamaiketakoa</string>
+    <string name="comedor1">edalontzia</string><string name="comedor1c">vaso</string><string name="comedor1e">glass</string>
+    <string name="comedor2">platerra</string><string name="comedor2c">plato</string><string name="comedor2e">plate</string>
+    <string name="comedor3">sardexka</string><string name="comedor3c">tenedor</string><string name="comedor3e">fork</string>
+    <string name="comedor4">koilara</string><string name="comedor4c">cuchara</string><string name="comedor4e">spoon</string>
+    <string name="comedor5">labana</string><string name="comedor5c">cuchillo</string><string name="comedor5e">knive</string>
+    <string name="comedor6">pitxarra</string><string name="comedor6c">jarra</string><string name="comedor6e">pitcher</string>
+    <string name="comedor7">janaria</string><string name="comedor7c">comida</string><string name="comedor7e">food</string>
+    <string name="comedor8">gosaria</string><string name="comedor8c">desayuno</string><string name="comedor8e">breakfast</string>
+    <string name="comedor9">hamaiketakoa</string><string name="comedor9c">almuerzo</string><string name="comedor9e">lunch</string>
 
-    <string name="aula1">irakaslea</string>
-    <string name="aula2">ikaslea</string>
-    <string name="aula3">arbela</string>
-    <string name="aula4">agenda</string>
-    <string name="aula5">mahaia</string>
-    <string name="aula6">aulkia</string>
-    <string name="aula7">estutxea</string>
-    <string name="aula8">koadernoa</string>
-    <string name="aula9">karpeta</string>
+    <string name="aula1">irakaslea</string><string name="aula1c">profesor</string><string name="aula1e">teacher</string>
+    <string name="aula2">ikaslea</string><string name="aula2c">alumno</string><string name="aula2e">student</string>
+    <string name="aula3">arbela</string><string name="aula3c">pizarra</string><string name="aula3e">board</string>
+    <string name="aula4">agenda</string><string name="aula4c">agenda</string><string name="aula4e">diary</string>
+    <string name="aula5">mahaia</string><string name="aula5c">mesa</string><string name="aula5e">table</string>
+    <string name="aula6">aulkia</string><string name="aula6c">silla</string><string name="aula6e">chair</string>
+    <string name="aula7">estutxea</string><string name="aula7c">estuche</string><string name="aula7e">pencil case</string>
+    <string name="aula8">koadernoa</string><string name="aula8c">cuaderno</string><string name="aula8e">notebook</string>
+    <string name="aula9">karpeta</string><string name="aula9c">carpeta</string><string name="aula9e">folder</string>
 
-    <string name="gimnasio1">korrika</string>
-    <string name="gimnasio2">salto</string>
-    <string name="gimnasio3">eraiki</string>
-    <string name="gimnasio4">zaldi</string>
-    <string name="gimnasio5">tranpolin</string>
-    <string name="gimnasio6">koltxoneta</string>
+    <string name="gimnasio1">korrika</string><string name="gimnasio1c">correr</string><string name="gimnasio1e">run</string>
+    <string name="gimnasio2">salto</string><string name="gimnasio2c">saltar</string><string name="gimnasio2e">jump</string>
+    <string name="gimnasio3">eraiki</string><string name="gimnasio3c">construir</string><string name="gimnasio3e">build</string>
+    <string name="gimnasio4">txirrista</string><string name="gimnasio4c">tobogan</string><string name="gimnasio4e">slide</string>
+    <string name="gimnasio5">tranpolin</string><string name="gimnasio5c">trampolin</string><string name="gimnasio5e">trampoline</string>
+    <string name="gimnasio6">koltxoneta</string><string name="gimnasio6c">colchoneta</string><string name="gimnasio6e">pad</string>
 
 </resources>

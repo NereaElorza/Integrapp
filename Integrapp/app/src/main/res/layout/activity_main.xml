@@ -14,26 +14,17 @@
         android:text="@string/titulo_hizkuntzak"
         android:onClick="menu"/>
     <Button
-        android:text="@string/but_h1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="menu"/>
-    <Button
+        android:id="@+id/castellano"
         android:text="@string/but_h2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="menu"/>
     <Button
-        android:text="@string/but_h3"
+        android:id="@+id/ingles"
+        android:text="@string/but_h1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="menu"/>
-    <Button
-        android:text="@string/but_h4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="menu"/>
-
 
 </LinearLayout>
 
