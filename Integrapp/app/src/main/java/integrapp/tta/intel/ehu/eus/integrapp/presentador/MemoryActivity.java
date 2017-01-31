@@ -196,22 +196,4 @@ public class MemoryActivity extends AppCompatActivity implements View.OnClickLis
         startActivity(intent);
     }
 
-    public Bitmap get_imagen(String url) {
-        System.out.println("En getImagen");
-        Bitmap bm = null;
-        try {
-            URL _url = new URL(url);
-            URLConnection con = _url.openConnection();
-            con.connect();
-            InputStream is = con.getInputStream();
-            BufferedInputStream bis = new BufferedInputStream(is);
-            bm = BitmapFactory.decodeStream(bis);
-            bis.close();
-            is.close();
-        } catch (IOException e) {
-
-        }
-        return bm;
-    }
-
 }
