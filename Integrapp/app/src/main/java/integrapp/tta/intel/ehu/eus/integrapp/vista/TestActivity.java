@@ -1,4 +1,4 @@
-package integrapp.tta.intel.ehu.eus.integrapp;
+package integrapp.tta.intel.ehu.eus.integrapp.vista;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -10,6 +10,8 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import integrapp.tta.intel.ehu.eus.integrapp.R;
 
 public class TestActivity extends AppCompatActivity {
 

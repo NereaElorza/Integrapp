@@ -1,4 +1,4 @@
-package integrapp.tta.intel.ehu.eus.integrapp;
+package integrapp.tta.intel.ehu.eus.integrapp.vista;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -12,6 +12,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.io.IOException;
+
+import integrapp.tta.intel.ehu.eus.integrapp.AudioPlayer;
+import integrapp.tta.intel.ehu.eus.integrapp.R;
 
 public class Mapa2Activity extends AppCompatActivity implements View.OnClickListener {
 

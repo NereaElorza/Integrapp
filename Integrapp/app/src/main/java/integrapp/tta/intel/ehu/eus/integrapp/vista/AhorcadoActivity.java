@@ -1,4 +1,4 @@
-package integrapp.tta.intel.ehu.eus.integrapp;
+package integrapp.tta.intel.ehu.eus.integrapp.vista;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -9,9 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.StringTokenizer;
+import integrapp.tta.intel.ehu.eus.integrapp.R;
 
 
 public class AhorcadoActivity extends AppCompatActivity {

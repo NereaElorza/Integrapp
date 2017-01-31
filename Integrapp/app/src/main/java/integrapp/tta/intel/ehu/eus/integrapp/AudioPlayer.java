@@ -26,7 +26,6 @@ public class AudioPlayer implements MediaController.MediaPlayerControl, MediaPla
             public boolean dispatchKeyEvent(KeyEvent event){
                 if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
                     release();
-                   // onExit.run();
                 }
                 return super.dispatchKeyEvent(event);
             }

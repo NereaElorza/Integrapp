@@ -1,4 +1,4 @@
-package integrapp.tta.intel.ehu.eus.integrapp;
+package integrapp.tta.intel.ehu.eus.integrapp.vista;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -17,6 +17,9 @@ import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
+
+import integrapp.tta.intel.ehu.eus.integrapp.AudioPlayer;
+import integrapp.tta.intel.ehu.eus.integrapp.R;
 
 public class AudioActivity extends AppCompatActivity implements View.OnClickListener {
 

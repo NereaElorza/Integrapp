@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/menu_jolasak"
-    tools:context=".JolasakActivity">
+    tools:context=".vista.JolasakActivity">
 
     <TextView
         android:text="@string/titulo_jolasak"
