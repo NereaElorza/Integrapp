@@ -23,23 +23,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".vista.MainActivity">
+        <activity android:name=".presentador.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".vista.AukerakActivity" />
-        <activity android:name=".vista.JolasakActivity" />
-        <activity android:name=".vista.AutoebaluazioaActivity" />
-        <activity android:name=".vista.AudioActivity" />
-        <activity android:name=".vista.AhorcadoActivity" />
-        <activity android:name=".vista.MemoryActivity" />
-        <activity android:name=".vista.UnirActivity" />
-        <activity android:name=".vista.TestActivity" />
-        <activity android:name=".vista.MapaActivity" />
-        <activity android:name=".vista.Mapa2Activity"></activity>
+        <activity android:name=".presentador.AukerakActivity" />
+        <activity android:name=".presentador.JolasakActivity" />
+        <activity android:name=".presentador.AutoebaluazioaActivity" />
+        <activity android:name=".presentador.AudioActivity" />
+        <activity android:name=".presentador.AhorcadoActivity" />
+        <activity android:name=".presentador.MemoryActivity" />
+        <activity android:name=".presentador.UnirActivity" />
+        <activity android:name=".presentador.TestActivity" />
+        <activity android:name=".presentador.MapaActivity" />
+        <activity android:name=".presentador.Mapa2Activity"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package integrapp.tta.intel.ehu.eus.integrapp;
+package integrapp.tta.intel.ehu.eus.integrapp.vista;
 
 import android.media.AudioManager;
 import android.media.MediaPlayer;

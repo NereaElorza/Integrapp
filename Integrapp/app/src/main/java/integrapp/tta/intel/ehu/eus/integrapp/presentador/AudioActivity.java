@@ -1,24 +1,19 @@
-package integrapp.tta.intel.ehu.eus.integrapp.vista;
+package integrapp.tta.intel.ehu.eus.integrapp.presentador;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.media.MediaPlayer;
 import android.net.Uri;
-import android.net.rtp.AudioGroup;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import java.io.File;
 import java.io.IOException;
 
-import integrapp.tta.intel.ehu.eus.integrapp.AudioPlayer;
+import integrapp.tta.intel.ehu.eus.integrapp.vista.AudioPlayer;
 import integrapp.tta.intel.ehu.eus.integrapp.R;
 
 public class AudioActivity extends AppCompatActivity implements View.OnClickListener {

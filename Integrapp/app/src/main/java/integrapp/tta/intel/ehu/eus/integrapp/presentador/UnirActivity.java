@@ -1,4 +1,4 @@
-package integrapp.tta.intel.ehu.eus.integrapp.vista;
+package integrapp.tta.intel.ehu.eus.integrapp.presentador;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;

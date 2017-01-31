@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/menu_autoebaluazioa"
-    tools:context=".vista.AutoebaluazioaActivity">
+    tools:context=".presentador.AutoebaluazioaActivity">
 
     <TextView
         android:text="@string/titulo_autoebaluazioa"
